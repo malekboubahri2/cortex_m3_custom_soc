@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../cortexm3_soc/CORTEXM3INTEGRATION/rtl/CORTEXM3INTEGRATIONDS.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cm3_in.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cm3_matrix.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cm3_matrix_default_slave.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cm3_matrix_lite.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cm3_outM0.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cm3_outM1.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cm3_outM2.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cm3_outM3.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM1.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM2.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM3.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS0.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS1.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS3.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS4.v" \
+"../../../../../cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS5.v" \
+"../../../../../cortexm3_soc/cmsdk_ahb_to_sram/rtl/cmsdk_ahb_to_sram.v" \
+"../../../../../cortexm3_soc/cmsdk_fpga_sram/verilog/cmsdk_fpga_sram.v" \
+"../../../../../cortexm3_soc/top/rtl/cortexm3_soc.v" \
+"../../../../../cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v" \
+"../../../../../cortexm3_soc/top/tb/cortexm3_soc_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

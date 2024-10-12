@@ -1,0 +1,1 @@
+-wto "f45304585f0746c5a17db68f36f5cedb" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "cortexm3_soc_tb_behav" "xil_defaultlib.cortexm3_soc_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,0 +1,1077 @@
+
+*** Running vivado
+    with args -log cortexm3_soc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cortexm3_soc.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source cortexm3_soc.tcl -notrace
+Command: synth_design -top cortexm3_soc -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11144 
+WARNING: [Synth 8-2306] macro TRN_IDLE redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:84]
+WARNING: [Synth 8-2306] macro TRN_BUSY redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:85]
+WARNING: [Synth 8-2306] macro TRN_NONSEQ redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:86]
+WARNING: [Synth 8-2306] macro TRN_SEQ redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:87]
+WARNING: [Synth 8-2306] macro BUR_SINGLE redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:90]
+WARNING: [Synth 8-2306] macro BUR_INCR redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:91]
+WARNING: [Synth 8-2306] macro BUR_WRAP4 redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:92]
+WARNING: [Synth 8-2306] macro BUR_INCR4 redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:93]
+WARNING: [Synth 8-2306] macro BUR_WRAP8 redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:94]
+WARNING: [Synth 8-2306] macro BUR_INCR8 redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:95]
+WARNING: [Synth 8-2306] macro BUR_WRAP16 redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:96]
+WARNING: [Synth 8-2306] macro BUR_INCR16 redefined [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:97]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 466.578 ; gain = 155.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cortexm3_soc' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/top/rtl/cortexm3_soc.v:2]
+	Parameter RAM_AW bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_fpga_sram' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cmsdk_fpga_sram/verilog/cmsdk_fpga_sram.v:27]
+	Parameter AW bound to: 12 - type: integer 
+	Parameter MEMFILE bound to: image.hex - type: string 
+	Parameter AWT bound to: 4095 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_fpga_sram' (1#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cmsdk_fpga_sram/verilog/cmsdk_fpga_sram.v:27]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_to_sram' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cmsdk_ahb_to_sram/rtl/cmsdk_ahb_to_sram.v:26]
+	Parameter AW bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_ahb_to_sram' (2#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cmsdk_ahb_to_sram/rtl/cmsdk_ahb_to_sram.v:26]
+INFO: [Synth 8-6157] synthesizing module 'CORTEXM3INTEGRATIONDS' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/CORTEXM3INTEGRATIONDS.v:24]
+INFO: [Synth 8-6157] synthesizing module 'cortexm3ds_logic' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'cortexm3ds_logic' (3#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'CORTEXM3INTEGRATIONDS' (4#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/CORTEXM3INTEGRATIONDS.v:24]
+INFO: [Synth 8-6157] synthesizing module 'cm3_matrix_lite' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_matrix_lite.v:33]
+INFO: [Synth 8-6157] synthesizing module 'cm3_matrix' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_matrix.v:50]
+INFO: [Synth 8-6157] synthesizing module 'cm3_in' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_in.v:32]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_in.v:417]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_in.v:433]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_in' (5#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_in.v:32]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_MyDecoderNameS0' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS0.v:36]
+INFO: [Synth 8-6157] synthesizing module 'cm3_matrix_default_slave' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_matrix_default_slave.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_matrix_default_slave' (6#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_matrix_default_slave.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_MyDecoderNameS0' (7#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS0.v:36]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_MyDecoderNameS1' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS1.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_MyDecoderNameS1' (8#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS1.v:36]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_MyDecoderNameS3' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS3.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_MyDecoderNameS3' (9#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS3.v:36]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_MyDecoderNameS4' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS4.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_MyDecoderNameS4' (10#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS4.v:36]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_MyDecoderNameS5' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS5.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_MyDecoderNameS5' (11#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyDecoderNameS5.v:36]
+INFO: [Synth 8-6157] synthesizing module 'cm3_outM0' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_outM0.v:35]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_MyArbiterNameM0' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:35]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:175]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:178]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_MyArbiterNameM0' (12#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM0.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_outM0' (13#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_outM0.v:35]
+INFO: [Synth 8-6157] synthesizing module 'cm3_outM1' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_outM1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_MyArbiterNameM1' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM1.v:35]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM1.v:175]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM1.v:178]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_MyArbiterNameM1' (14#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM1.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_outM1' (15#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_outM1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'cm3_outM2' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_outM2.v:35]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_MyArbiterNameM2' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM2.v:35]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM2.v:169]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM2.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_MyArbiterNameM2' (16#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM2.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_outM2' (17#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_outM2.v:35]
+INFO: [Synth 8-6157] synthesizing module 'cm3_outM3' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_outM3.v:35]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_MyArbiterNameM3' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM3.v:35]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM3.v:169]
+INFO: [Synth 8-226] default block is never used [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM3.v:172]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_MyArbiterNameM3' (18#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cmsdk_MyArbiterNameM3.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_outM3' (19#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_outM3.v:35]
+WARNING: [Synth 8-3848] Net SCANOUTHCLK in module/entity cm3_matrix does not have driver. [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_matrix.v:465]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_matrix' (20#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_matrix.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'cm3_matrix_lite' (21#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/cm3_matrix/rtl/cm3_matrix_lite.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'cortexm3_soc' (22#1) [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/top/rtl/cortexm3_soc.v:2]
+WARNING: [Synth 8-3331] design cm3_matrix_default_slave has unconnected port HTRANS[0]
+WARNING: [Synth 8-3331] design cm3_matrix has unconnected port SCANOUTHCLK
+WARNING: [Synth 8-3331] design cm3_matrix has unconnected port REMAP[3]
+WARNING: [Synth 8-3331] design cm3_matrix has unconnected port REMAP[2]
+WARNING: [Synth 8-3331] design cm3_matrix has unconnected port REMAP[1]
+WARNING: [Synth 8-3331] design cm3_matrix has unconnected port REMAP[0]
+WARNING: [Synth 8-3331] design cm3_matrix has unconnected port SCANENABLE
+WARNING: [Synth 8-3331] design cm3_matrix has unconnected port SCANINHCLK
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port RETAINn
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port CGBYPASS
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[239]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[238]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[237]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[236]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[235]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[234]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[233]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[232]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[231]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[230]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[229]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[228]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[227]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[226]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[225]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[224]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[223]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[222]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[221]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[220]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[219]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[218]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[217]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[216]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[215]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[214]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[213]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[212]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[211]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[210]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[209]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[208]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[207]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[206]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[205]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[204]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[203]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[202]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[201]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[200]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[199]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[198]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[197]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[196]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[195]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[194]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[193]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[192]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[191]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[190]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[189]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[188]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[187]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[186]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[185]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[184]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[183]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[182]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[181]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[180]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[179]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[178]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[177]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[176]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[175]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[174]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[173]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[172]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[171]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[170]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[169]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[168]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[167]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[166]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[165]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[164]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[163]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[162]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[161]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[160]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[159]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[158]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[157]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[156]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[155]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[154]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[153]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[152]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[151]
+WARNING: [Synth 8-3331] design cortexm3ds_logic has unconnected port INTISR[150]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:01:07 ; elapsed = 00:01:22 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:14 ; elapsed = 00:01:36 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Synth 8-4471] merging register 'Et2nz6_reg' into 'Er2nz6_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:7214]
+INFO: [Synth 8-4471] merging register 'Hs2nz6_reg' into 'Su2nz6_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:7213]
+INFO: [Synth 8-4471] merging register 'Ms3nz6_reg' into 'Ul3nz6_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:7232]
+INFO: [Synth 8-4471] merging register 'Ki0oz6_reg' into 'Ek0oz6_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:7733]
+INFO: [Synth 8-4471] merging register 'Ldbu07_reg' into 'Zabu07_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11151]
+INFO: [Synth 8-4471] merging register 'Rhbu07_reg' into 'Dkbu07_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11153]
+INFO: [Synth 8-4471] merging register 'Vqbu07_reg' into 'Jobu07_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11157]
+INFO: [Synth 8-4471] merging register 'Nxbu07_reg' into 'Bvbu07_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11160]
+INFO: [Synth 8-4471] merging register 'F4cu07_reg' into 'T1cu07_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11163]
+INFO: [Synth 8-4471] merging register 'Xacu07_reg' into 'L8cu07_reg' [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11166]
+WARNING: [Synth 8-6014] Unused sequential element Hs2nz6_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:7213]
+WARNING: [Synth 8-6014] Unused sequential element Et2nz6_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:7214]
+WARNING: [Synth 8-6014] Unused sequential element Ms3nz6_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:7232]
+WARNING: [Synth 8-6014] Unused sequential element Ki0oz6_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:7733]
+WARNING: [Synth 8-6014] Unused sequential element Ldbu07_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11151]
+WARNING: [Synth 8-6014] Unused sequential element Rhbu07_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11153]
+WARNING: [Synth 8-6014] Unused sequential element Vqbu07_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11157]
+WARNING: [Synth 8-6014] Unused sequential element Nxbu07_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11160]
+WARNING: [Synth 8-6014] Unused sequential element F4cu07_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11163]
+WARNING: [Synth 8-6014] Unused sequential element Xacu07_reg was removed.  [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:11166]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/VLSI-RTL/asic_design/xilinx/cortexm3_soc/CORTEXM3INTEGRATION/rtl/cortexm3ds_logic.v:13205]
+INFO: [Synth 8-5544] ROM "next_burst_remain" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_burst_hold" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_burst_remain" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_burst_hold" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_burst_remain" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_burst_hold" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_burst_remain" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_burst_hold" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:13 ; elapsed = 00:05:46 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM BRAM1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM BRAM2_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM BRAM3_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM BRAM1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM BRAM2_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM BRAM3_reg. We will not be able to pipeline it. This may degrade performance. 
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |cortexm3ds_logic__GB0 |           1|     30982|
+|2     |cortexm3ds_logic__GB1 |           1|     31939|
+|3     |cortexm3ds_logic__GB2 |           1|     14124|
+|4     |cortexm3_soc__GC0     |           1|      5803|
++------+----------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 11    
+	   2 Input     33 Bit       Adders := 6     
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
+	   3 Input     31 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1256  
+	   3 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 10    
+	               12 Bit    Registers := 8     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 23    
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 5711  
++---RAMs : 
+	              32K Bit         RAMs := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 30    
+	   4 Input     32 Bit        Muxes := 6     
+	   5 Input     32 Bit        Muxes := 12    
+	   3 Input     32 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 9     
+	   2 Input      4 Bit        Muxes := 30    
+	   5 Input      4 Bit        Muxes := 8     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 34    
+	   3 Input      3 Bit        Muxes := 7     
+	   4 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 8     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 37    
+	   4 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2243  
+	   4 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 24    
+	   9 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cortexm3ds_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     34 Bit       Adders := 11    
+	   2 Input     33 Bit       Adders := 6     
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
+	   3 Input     31 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1256  
+	   3 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 5652  
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2130  
+Module cmsdk_fpga_sram__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module cmsdk_ahb_to_sram__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+Module cmsdk_fpga_sram 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module cmsdk_ahb_to_sram 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+Module cm3_in__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+Module cm3_in__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+Module cm3_in__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+Module cm3_in__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+Module cm3_in 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+Module cm3_matrix_default_slave 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module cmsdk_MyDecoderNameS0 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module cm3_matrix_default_slave__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module cmsdk_MyDecoderNameS1 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module cm3_matrix_default_slave__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module cmsdk_MyDecoderNameS3 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module cm3_matrix_default_slave__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module cmsdk_MyDecoderNameS4 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module cm3_matrix_default_slave__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module cmsdk_MyDecoderNameS5 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+Module cmsdk_MyArbiterNameM0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 20    
+	   9 Input      1 Bit        Muxes := 1     
+Module cm3_outM0 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+Module cmsdk_MyArbiterNameM1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 20    
+	   9 Input      1 Bit        Muxes := 1     
+Module cm3_outM1 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+Module cmsdk_MyArbiterNameM2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module cm3_outM2 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+Module cmsdk_MyArbiterNameM3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module cm3_outM3 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP Glym17, operation Mode is: A*B.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: Generating DSP Glym17, operation Mode is: A*B.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: Generating DSP Glym17, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+INFO: [Synth 8-6430] The Block RAM cmsdk_fpga_sram_A/BRAM0_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM cmsdk_fpga_sram_S/BRAM0_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cmsdk_fpga_sram_A/BRAM0_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM cmsdk_fpga_sram_S/BRAM0_reg to conserve power
+RAM Pipeline Warning: Read Address Register Found For RAM cmsdk_fpga_sram_A/BRAM1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM cmsdk_fpga_sram_A/BRAM2_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM cmsdk_fpga_sram_A/BRAM3_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM cmsdk_fpga_sram_S/BRAM1_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM cmsdk_fpga_sram_S/BRAM2_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM cmsdk_fpga_sram_S/BRAM3_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM cmsdk_fpga_sram_A/BRAM0_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM cmsdk_fpga_sram_S/BRAM0_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_in_2/reg_mastlock_reg)
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_size_reg[1]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_size_reg[2]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_size_reg[1]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_size_reg[2]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_size_reg[0]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_size_reg[0]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[1]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[1]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[0]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[0]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_mastlock_reg' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_in_1/reg_mastlock_reg)
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_mastlock_reg' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_0/reg_mastlock_reg' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_0/reg_write_reg'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_burst_reg[0]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_burst_reg[0]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_burst_reg[2]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_burst_reg[2]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_burst_reg[1]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[0]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_trans_reg[1]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_burst_reg[1]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[0]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_trans_reg[1]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/data_valid_reg' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/burst_override_reg'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/data_valid_reg' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/burst_override_reg'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[2]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[2]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[3]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[3]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[4]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[4]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[5]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[5]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[6]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[6]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[7]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[7]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[8]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[8]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[9]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[9]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[10]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[10]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[11]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[11]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[16]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[30]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[31]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[29]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[28]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[27]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[26]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[25]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[24]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[23]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[22]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[21]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[20]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[19]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[18]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_addr_reg[17]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/bound_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_in_3/burst_override_reg)
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/bound_reg' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_3/reg_write_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cmsdk_mydecodernames1/\data_out_port_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[16]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[30]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[31]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[29]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[28]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[27]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[26]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[25]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[24]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[23]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[22]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[21]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[20]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[19]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[18]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_addr_reg[17]' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/bound_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_in_4/burst_override_reg)
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/bound_reg' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_in_4/reg_write_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_in_3/reg_write_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_in_3/pend_tran_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_in_4/reg_write_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_in_4/pend_tran_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_in_0/reg_write_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cmsdk_mydecodernames0/\data_out_port_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_outm0_0/hsel_lock_reg' (FDCE) to 'i_0/cm3_matrix_lite/ucm3_matrix/u_cm3_outm0_0/data_in_port_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cm3_matrix_lite/ucm3_matrix /u_cm3_outm0_0/\data_in_port_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[15]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[14]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[13]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[12]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[31]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[30]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[29]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[28]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[27]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[26]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[25]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[24]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[23]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[22]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[21]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[20]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[19]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[18]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[17]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[16]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[15]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[14]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[13]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[12]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[11]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[10]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[9]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[8]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[7]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[6]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[5]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[4]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[3]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[2]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[1]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[0]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_size_reg[2]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_prot_reg[3]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_prot_reg[2]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_prot_reg[1]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_prot_reg[0]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_master_reg[3]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_master_reg[2]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_master_reg[1]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_master_reg[0]) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_write_reg) is unused and will be removed from module cm3_in__1.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[15]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[14]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[13]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[12]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[31]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[30]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[29]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[28]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[27]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[26]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[25]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[24]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[23]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[22]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[21]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[20]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[19]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[18]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[17]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[16]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[15]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[14]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[13]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[12]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[11]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[10]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[9]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[8]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[7]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[6]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[5]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[4]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[3]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[2]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[1]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[0]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_size_reg[2]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_prot_reg[3]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_prot_reg[2]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_prot_reg[1]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_prot_reg[0]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_master_reg[3]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_master_reg[2]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_master_reg[1]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_master_reg[0]) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_mastlock_reg) is unused and will be removed from module cm3_in__2.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[15]) is unused and will be removed from module cm3_in__3.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[14]) is unused and will be removed from module cm3_in__3.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[13]) is unused and will be removed from module cm3_in__3.
+WARNING: [Synth 8-3332] Sequential element (reg_addr_reg[12]) is unused and will be removed from module cm3_in__3.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[31]) is unused and will be removed from module cm3_in__3.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[30]) is unused and will be removed from module cm3_in__3.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[29]) is unused and will be removed from module cm3_in__3.
+WARNING: [Synth 8-3332] Sequential element (reg_auser_reg[28]) is unused and will be removed from module cm3_in__3.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:57 ; elapsed = 00:06:38 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cortexm3ds_logic | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm3ds_logic | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm3ds_logic | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:57 ; elapsed = 00:06:38 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:57 ; elapsed = 00:06:38 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:58 ; elapsed = 00:06:40 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:58 ; elapsed = 00:06:40 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:58 ; elapsed = 00:06:40 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:58 ; elapsed = 00:06:40 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:58 ; elapsed = 00:06:40 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:58 ; elapsed = 00:06:40 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:58 ; elapsed = 00:06:40 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 484 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:59 ; elapsed = 00:06:48 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+Synthesis Optimization Complete : Time (s): cpu = 00:05:59 ; elapsed = 00:06:48 . Memory (MB): peak = 1502.145 ; gain = 1191.027
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+179 Infos, 223 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:09 ; elapsed = 00:07:09 . Memory (MB): peak = 1502.145 ; gain = 1203.672
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/VLSI-RTL/asic_design/xilinx/soc_cm3/soc_cm3.runs/synth_1/cortexm3_soc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cortexm3_soc_utilization_synth.rpt -pb cortexm3_soc_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.738 . Memory (MB): peak = 1502.145 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 23 21:00:25 2024...
